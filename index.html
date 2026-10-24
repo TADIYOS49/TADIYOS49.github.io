@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tadiyos Banti</title>
+  <meta name="description" content="Tadiyos Banti — software engineer and ML practitioner working on reliable, efficient AI systems.">
+  <link rel="icon" href="favicon.ico?v=3" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <nav class="tabs" aria-label="Sections">
+      <a href="#home" data-page="home">Home</a>
+      <a href="#experience" data-page="experience">Experience</a>
+      <a href="#projects" data-page="projects">Projects</a>
+      <a href="#education" data-page="education">Education</a>
+      <a href="assets/cv.pdf?v=3">CV</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </nav>
+
+    <div class="layout">
+
+      <aside class="profile">
+        <img class="avatar" src="assets/avatar.jpg" alt="Photo of Tadiyos Banti" width="200" height="200">
+        <h1>Tadiyos Banti</h1>
+        <p class="role">Software Engineer</p>
+
+        <ul class="facts">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM10 5h4v2h-4V5z"/></svg>
+            <span>Full-Stack Engineer, <a href="https://www.hydrus.ai/">Hydrus</a><br>Senior Engineer, <a href="https://beudelivery.com/">beU</a></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>
+            <span>BSc Software Engineering, AASTU</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Addis Ababa, Ethiopia</span>
+          </li>
+        </ul>
+
+        <ul class="contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:tadiyosbanti@gmail.com">tadiyosbanti@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            <a href="https://github.com/TADIYOS49">github.com/TADIYOS49</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+            <a href="assets/cv.pdf?v=3">Download CV (PDF)</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+
+        <section id="page-home" class="view">
+          <h2>About Me</h2>
+          <p>
+            I'm a software engineer with 4+ years of building software integrated with GenAI. I'm currently a full-stack
+            software engineer at <a href="https://www.hydrus.ai/">Hydrus</a>. At this Silicon Valley sustainability startup,
+            I build LLM agents for enterprise data. I also lead the platform redevelopment at <a href="https://beudelivery.com/">beU</a>,
+            a Y&nbsp;Combinator-backed delivery app with 700k+ users. Before that, I led the <a href="http://afrochat.app">AfroChat</a>
+            team at <a href="http://a2sv.org">A2SV</a> (Africa to Silicon Valley), taught algorithms to student cohorts, and studied
+            Software Engineering at Addis Ababa Science &amp; Technology University.
+          </p>
+          <p>
+            I'm interested in exploring how AI can be used robustly and reliably in health, education, and sustainability.
+            I am especially interested in making AI more consistent and resilient to changes in data and setting. I want to
+            combine my experience with more research methodology in contributing to this growing field.
+          </p>
+
+          <h2>Research Interests</h2>
+          <ul class="interests">
+            <li><strong>Reliable generative AI</strong> — reducing hallucination and verifying the outputs of LLMs and other generative models.</li>
+            <li><strong>Robustness under different conditions</strong> — models that hold up in new locations, devices, or populations (e.g., medical imaging across hospitals), and know when they're uncertain.</li>
+            <li><strong>Efficient AI systems</strong> — cutting context, compute, and inference cost so models are practical in the real world.</li>
+          </ul>
+
+          <h2>News</h2>
+          <ul class="dated">
+            <li><span class="date">Oct 2026</span> <span>Applying to thesis-based MSc programs in Computer Science for Fall 2027.</span></li>
+            <li><span class="date">Jul 2026</span> <span>Joined <a href="https://beudelivery.com/">beU</a> as Senior Full-Stack Engineer, leading the system rewrite.</span></li>
+            <li><span class="date">Mar 2025</span> <span>Joined <a href="https://www.hydrus.ai/">Hydrus</a> to build LLM agents for sustainability data.</span></li>
+            <li><span class="date">2023–24</span> <span>Co-organized <a href="https://www.a2sv.org/events">A2SV Hackathons</a> with 5,000+ participants from 48 African countries.</span></li>
+          </ul>
+        </section>
+
+        <section id="page-experience" class="view">
+          <h2>Experience</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3><a href="https://www.hydrus.ai/">Hydrus</a> — Full-Stack Software Engineer</h3>
+              <span class="date">Mar 2025 – present</span>
+            </div>
+            <ul>
+              <li>Built a multi-agent and tool-based LLM assistant for enterprise clients to query, analyze, and edit data through chat, which led to a significant drop in manual reporting effort.</li>
+              <li>Cut LLM context per request from ~70&nbsp;MB to under ~1&nbsp;MB (&gt;98%) by scoping context to the user's active page for better chat latency and smaller overhead in requests.</li>
+              <li>Analyzed multi-year emission data to ensure calculation accuracy by mapping complex consumption surveys to specific emission factors. This led to resolving discrepancies of 1 to 5% in reported emissions.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3><a href="https://beudelivery.com/">beU</a> — Senior Full-Stack Software Engineer <span class="muted">(part-time)</span></h3>
+              <span class="date">Jul 2026 – present</span>
+            </div>
+            <ul>
+              <li>Leading the end-to-end rewrite of the legacy system (PHP) to TypeScript and Flutter, from development to deployment of the system and system design decisions.</li>
+              <li>Reduced AWS cost by 12% by replacing full table scans of geospatial queries with spatial indexes and bounding-box pre-filtering, and deployed a self-hosted OSRM engine to cut the third-party API for routing from $1200/month to under $100/month (&gt;90%).</li>
+              <li>Replaced full manual review of refund requests with a rule-based system that checks request frequency, amount of the order, and other attributes. It enabled a 5% decrease in fraudulent refunds and decreased the overload of requests for manual review by 70%.</li>
+              <li><span class="tag">in progress</span> Researching an image-based calorie and macronutrient estimation feature where users can get nutritional information from a picture of their meal.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3><a href="http://a2sv.org">A2SV</a> — Project Lead &amp; Software Engineer II, AfroChat</h3>
+              <span class="date">Mar 2023 – Feb 2025</span>
+            </div>
+            <ul>
+              <li>Led a team of 12 engineers, a PM, and a designer building web, mobile, and SaaS products.</li>
+              <li>Grew <a href="http://afrochat.app">AfroChat</a> to 7,000+ monthly users in 85+ countries through native-language support and custom AI characters.</li>
+              <li>Added LLM-generated progress insights to A2SV's student-tracking platform for ~700 students and mentors.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3>INSA (Information Network Security Administration) — ML Intern</h3>
+              <span class="date">Aug 2022 – Feb 2023</span>
+            </div>
+            <ul>
+              <li>Worked on hybrid network malware detection that combines rule-based checks with ML classifiers for unknown patterns.</li>
+            </ul>
+          </article>
+
+          <p class="muted small">
+            Earlier: backend intern at Mn-Ale-Addis (Django, MongoDB, 2020) · full-stack intern at Blue Labs, building farm-sensor data collection (2019).
+          </p>
+
+          <h2>Teaching &amp; Service</h2>
+          <ul>
+            <li><strong>DSA Instructor &amp; Mentor, A2SV</strong> (2024–25): taught Data Structures and Algorithms to student cohorts; mentored hackathon teams; ran Generative AI training for partner organizations.</li>
+            <li><strong>Student Mentor, Ethiopian Medical Advancement Initiative</strong> (AASTU): helped medical and engineering students apply technology in health, and contributed to a COVID-19 resource-locator platform for hospitals and clinics.</li>
+          </ul>
+
+          <h2>Skills</h2>
+          <dl class="skills">
+            <dt>Languages</dt><dd>Python, TypeScript/JavaScript, Java, C/C++, SQL, Go, PHP</dd>
+            <dt>ML &amp; AI</dt><dd>PyTorch, TensorFlow, scikit-learn, Transformers, LangChain, AutoGen, RAG, LLM evaluation</dd>
+            <dt>Tools &amp; Frameworks</dt><dd>AWS, GCP, Docker, Kubernetes, Linux, PostgreSQL, MongoDB, FastAPI, Flutter, React</dd>
+          </dl>
+        </section>
+
+        <section id="page-projects" class="view">
+          <h2>Selected Projects</h2>
+
+          <article class="project">
+            <h3>Reducing Hallucination in a Production RAG System</h3>
+            <p class="meta">AfroChat · A2SV · 2023–24 · <a href="http://afrochat.app">AfroChat</a></p>
+            <p>
+              Built a RAG pipeline over internal documents and compared guardrails: source verification, clarifying questions,
+              and refusal-with-redirection. The last one won and cut hallucinations by <strong>40%</strong>, measured on a
+              hand-built Q&amp;A set with GPT-4 as judge. Also explored fine-tuning Llama for Amharic using parallel
+              English–Amharic book translations.
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>Malaria Detection from Thin Blood Smears</h3>
+            <p class="meta">Capstone, ranked #2 in College of Engineering · 2021–22</p>
+            <p>
+              Adapted an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5907772/">NIH approach</a> to local data. NIH data didn't
+              transfer to local smears, so I collected smear images from hospitals and clinics in Addis Ababa and segmented ~6,000
+              balanced cell images. A classifier trained on a pretrained ResNet-50 reached <strong>0.89 accuracy</strong> on a
+              patient-separated split.
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>Real-Time Network Malware Detection</h3>
+            <p class="meta">INSA (Information Network Security Administration) · ML Intern · 2022–23</p>
+            <p>
+              Worked on a hybrid malware detection system for internal networks that combines rule-based, role-based, and ML
+              classifiers to catch unknown patterns.
+            </p>
+          </article>
+        </section>
+
+        <section id="page-education" class="view">
+          <h2>Education</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Addis Ababa Science &amp; Technology University</h3>
+              <span class="date">Jun 2022</span>
+            </div>
+            <p class="muted small">Addis Ababa, Ethiopia</p>
+            <p>Bachelor of Science in Software Engineering · Cumulative GPA: 3.29/4.00 (3.43 last two years)</p>
+            <p>
+              <strong>Capstone:</strong> Malaria Detection System using CNNs on Light Blood Smear Images — ranked #2 Final
+              Capstone Project, College of Engineering, 2022. Advisor: Biruk Gebru.
+            </p>
+            <p>
+              <strong>Relevant Coursework:</strong> Probability and Statistics (A-), Research Methodology in Software Engineering (A-),
+              Advanced Programming (A), Operating Systems (A-), Systems Programming (A-), Principles of Compiler Design (A),
+              Formal Language and Automata Theory (A-), Computer Graphics (A), Computer System and Information System Security (A-),
+              Data Communication and Computer Networks (A-).
+            </p>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3><a href="http://a2sv.org">A2SV (Africa to Silicon Valley)</a></h3>
+              <span class="date">Feb 2023 – Nov 2023</span>
+            </div>
+            <p class="muted small">Addis Ababa, Ethiopia</p>
+            <p>Data Structure and Algorithms Camp (Competitive Programming)</p>
+            <p>Focused on competitive programming, algorithmic problem solving, and applied AI development.</p>
+            <p>
+              <strong>Relevant Coursework:</strong> Sorting, Sliding Window, Prefix Sum, Recursion, Graph, Greedy, Dynamic Programming,
+              Binary Search &amp; Binary Trees.
+            </p>
+          </article>
+
+          <h2>Awards</h2>
+          <ul class="dated">
+            <li><span class="date">2023</span> <span>Top 3, A2SV Competitive Programming Camp</span></li>
+            <li><span class="date">2022</span> <span>Ranked #2, Final Capstone Project, College of Engineering, AASTU</span></li>
+            <li><span class="date">2021</span> <span>Top 20, Ethiopian Collegiate Programming Contest</span></li>
+            <li><span class="date">2019</span> <span>Certificate of Appreciation, AASTU, for building an internal scheduling system</span></li>
+          </ul>
+
+          <h2>Certifications</h2>
+          <ul>
+            <li>Machine Learning — Stanford University (Coursera)</li>
+          </ul>
+        </section>
+
+        <footer>© 2026 Tadiyos Banti · Last updated 2026</footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // Every link except in-page tabs opens in a new tab.
+    document.querySelectorAll("a[href]").forEach(a => {
+      if (!a.getAttribute("href").startsWith("#")) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      }
+    });
+
+    // Show one page at a time based on the URL hash.
+    // Section ids are "page-<name>" so the hash never triggers the browser's own anchor jump.
+    const pages = [...document.querySelectorAll(".view")].map(s => s.id.replace("page-", ""));
+    function show() {
+      const id = pages.includes(location.hash.slice(1)) ? location.hash.slice(1) : "home";
+      document.querySelectorAll(".view").forEach(s => s.hidden = s.id !== "page-" + id);
+      document.querySelectorAll(".tabs a[data-page]").forEach(a =>
+        a.classList.toggle("active", a.dataset.page === id));
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener("hashchange", show);
+    show();
+
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+      const root = document.documentElement;
+      const dark = root.dataset.theme
+        ? root.dataset.theme === "dark"
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+      root.dataset.theme = dark ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    });
+  </script>
+</body>
+</html>
