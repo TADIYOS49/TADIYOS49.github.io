@@ -13,6 +13,9 @@
     try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
     document.documentElement.classList.add("js");
   </script>
+  <!-- Clicky analytics (cookies off): visits, city/organization, CV opens -->
+  <script>var clicky_custom = clicky_custom || {}; clicky_custom.cookies_disable = 1;</script>
+  <script async data-id="101514003" src="https://static.getclicky.com/js"></script>
 </head>
 <body>
   <div class="page">
@@ -22,7 +25,7 @@
       <a href="#experience" data-page="experience">Experience</a>
       <a href="#projects" data-page="projects">Projects</a>
       <a href="#education" data-page="education">Education</a>
-      <a href="assets/cv.pdf?v=5">CV</a>
+      <a class="clicky_log_download" href="assets/cv.pdf?v=5">CV</a>
       <button id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
     </nav>
 
@@ -63,7 +66,7 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
-            <a href="assets/cv.pdf?v=5">Download CV (PDF)</a>
+            <a class="clicky_log_download" href="assets/cv.pdf?v=5">Download CV (PDF)</a>
           </li>
         </ul>
       </aside>
@@ -279,7 +282,11 @@
         a.classList.toggle("active", a.dataset.page === id));
       window.scrollTo(0, 0);
     }
-    window.addEventListener("hashchange", show);
+    window.addEventListener("hashchange", () => {
+      show();
+      // Log tab switches as page views (the first load is logged automatically).
+      if (window.clicky) clicky.log(location.hash, document.title + " – " + location.hash.slice(1));
+    });
     show();
 
     document.getElementById("theme-toggle").addEventListener("click", () => {
